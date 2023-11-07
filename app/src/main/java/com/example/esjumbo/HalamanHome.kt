@@ -30,27 +30,28 @@ import com.example.esjumbo.ui.theme.EsJumboTheme
 
 @Composable
 fun HalamanHome (
-    onNextButtonClicked: () -> Unit){
+    onNextButtonClicked: () -> Unit
+){
     val image = painterResource(id = R.drawable.img)
-    Column (modifier = Modifier,
-        verticalArrangement = Arrangement.SpaceBetween){
+    Column (
+        modifier = Modifier,
+        verticalArrangement = Arrangement.SpaceBetween
+    ){
         OutlinedCard(
             colors = CardDefaults.cardColors(
                 containerColor = MaterialTheme.colorScheme.surface,
             ),
-            border = BorderStroke(1.dp, Color.Black), modifier = Modifier
+            border = BorderStroke(1.dp, Color.Black),
+            modifier = Modifier
                 .fillMaxWidth(0.95f)
                 .padding(vertical = 50.dp)
                 .align(Alignment.CenterHorizontally)
         ){
             Column(horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier
-                    .align(Alignment.CenterHorizontally)) {
-                Image(
-                    painter = image,
-                    contentDescription = null,
-                    contentScale = ContentScale.Crop
-                )
+                    .align(Alignment.CenterHorizontally)
+            ) {
+                Image(painter = image, contentDescription = null, contentScale = ContentScale.Crop)
                 Text(
                     text = "es Teh",
                     color = Color.DarkGray,
@@ -88,9 +89,11 @@ fun HalamanHome (
 }
 @Preview(showBackground = true)
 @Composable
-fun PreviewHalamanHome(){
+fun prev(){
     EsJumboTheme {
-        HalamanHome(onNextButtonClicked = {})
+        HalamanHome{
+
+        }
     }
 }
 
