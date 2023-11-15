@@ -1,5 +1,6 @@
 package com.example.esjumbo
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -65,9 +66,9 @@ fun CustomDetailsScreen(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp)
+                .padding(vertical = 8.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
-        ){
+        ) {
             OutlinedButton(onClick = onCancelButtonClicked) {
                 Text(text = "Cancel")
             }
