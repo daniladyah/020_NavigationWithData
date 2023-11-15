@@ -77,7 +77,7 @@ fun EsJumboApp(
         ) {
             composable(route = PengelolaHalaman.Home.name) {
                 HalamanHome(onNextButtonClicked = {
-                    navController.navigate(PengelolaHalaman.Rasa.name)
+                    navController.navigate(PengelolaHalaman.CustomerDetails.name)
                 })
             }
             composable(route = PengelolaHalaman.CustomerDetails.name) {
