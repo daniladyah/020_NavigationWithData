@@ -5,6 +5,8 @@ data class OrderUIState(
     val rasa: String = "",
     val harga: String = "",
     val namaPelanggan: String ="",
+    val nomorTelepon: String ="",
+    val alamat: String =""
 
 )
 
