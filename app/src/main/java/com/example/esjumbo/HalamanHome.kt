@@ -53,7 +53,7 @@ fun HalamanHome (
             ) {
                 Image(painter = image, contentDescription = null, contentScale = ContentScale.Crop)
                 Text(
-                    text = "es Teh",
+                    text = "Danillopers",
                     color = Color.DarkGray,
                     fontFamily = FontFamily.Cursive,
                     fontSize = 35.sp,
@@ -61,7 +61,7 @@ fun HalamanHome (
                         .align(Alignment.CenterHorizontally)
                 )
                 Text(
-                    text = "Gembrunggung",
+                    text = "Drink",
                     color = Color.DarkGray,
                     fontFamily = FontFamily.Cursive,
                     fontStyle = FontStyle.Italic,
